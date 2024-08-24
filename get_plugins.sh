@@ -78,6 +78,7 @@ trap "rm $out_file" EXIT
 extract_plugin_table $TARGET_FILE $tmp_file
 head_a=$(parse_array "$(head -n1 $tmp_file)")
 url_index=$(index_array url $head_a)
+version_index=$(index_array version $head_a)
 
 result_file=$(mktemp)
 skip_line=2
@@ -87,7 +88,8 @@ while IFS= read -r line; do
         continue
     fi
     raw_url=$(get_index "$line" $url_index) 
-    echo ${raw_url#https://} >> $result_file
+    version=$(get_index "$line" $version_index) 
+    echo ${raw_url#https://}@$version >> $result_file
 done < $tmp_file
 
 echo $result_file

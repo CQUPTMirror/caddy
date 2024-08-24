@@ -12,9 +12,9 @@ CI configuration is automatically generated basing on the below section, so plea
 
 ### Plugins
 
-|       name        | operation |                                            description                                                        |                      url                      |
-|:-----------------:|:---------:|:-------------------------------------------------------------------------------------------------------------:|:---------------------------------------------:|
-| caddy-logger-loki |    add    | log.writer plugin able to send log directly to loki without promtail help. This reduce unnecessary contaienrs | https://github.com/sujoshua/caddy-logger-loki | 
+|       name        | operation |                                            description                                                        |                      url                      |  version |
+|:-----------------:|:---------:|:-------------------------------------------------------------------------------------------------------------:|:---------------------------------------------:|:--------:|
+| caddy-logger-loki |    add    | log.writer plugin able to send log directly to loki without promtail help. This reduce unnecessary contaienrs | https://github.com/sujoshua/caddy-logger-loki |  v0.0.2  |
 
 ### Images
 

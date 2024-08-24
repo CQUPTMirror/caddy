@@ -14,9 +14,9 @@ CI的配置将根据下面的README生成，请保证下面的格式不变。
 
 ### 插件
 
-|名字|操作|描述|地址|
-|:---:|:---:|:---:|:---:|
-|caddy-logger-loki|add|log.writer插件，可以让caddy直接发送log给loki，而不需要promtail。这可以减少不必要的container|https://github.com/sujoshua/caddy-logger-loki|
+|名字|操作|描述|地址|版本|
+|:---:|:---:|:---:|:---:|:---:|
+|caddy-logger-loki|add|log.writer插件，可以让caddy直接发送log给loki，而不需要promtail。这可以减少不必要的container|https://github.com/sujoshua/caddy-logger-loki|v0.0.2|
 
 ### 镜像
 
